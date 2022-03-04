@@ -1,0 +1,10 @@
+name: Alternativexray
+version: 1.0-SNAPSHOT
+main: org.marinndev.others.alternativexray.Main
+api-version: 1.13
+authors: [MarinDEV]
+description: An alternative Anti-Xray plugin.
+depend: [WorldGuard,WorldEdit]
+
+commands:
+    axray:

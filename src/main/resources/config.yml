@@ -1,0 +1,115 @@
+mode: default # This is the current mode.
+mode-expire: none # Expiry time for the current mode.
+global-multiplier: 1.0
+tnt-multiplier: 1.0
+block-place-toggle: true # True if ore blocks should not be allowed to be blocked.
+console-errors: true # True if errors should be sent to the console.
+activated-worlds: # The worlds in which the plugin is activated.
+  - world
+  - world_nether
+worldguard-multipliers: # Multipliers based on worldguard regions.
+  exampleMultiplier: 3
+ore-sizes-chances: # The chances for different ore sizes to spawn.
+  diamond:
+    '1': 0.5
+    '2': 0.5
+    '4': 0.5
+    '8': 0.5
+  gold:
+    '1': 0.5
+    '2': 0.5
+    '4': 0.5
+    '8': 0.5
+  iron:
+    '1': 0.5
+    '2': 0.5
+    '4': 0.5
+    '8': 0.5
+  coal:
+    '1': 0.5
+    '2': 0.5
+    '4': 0.5
+    '8': 0.5
+  emerald:
+    '1': 0.5
+  lapis_lazuli:
+    '1': 0.5
+    '2': 0.5
+    '4': 0.5
+    '8': 0.5
+  redstone:
+    '1': 0.5
+    '2': 0.5
+    '4': 0.5
+    '8': 0.5
+  nether_quartz:
+    '1': 0.5
+    '2': 0.5
+    '4': 0.5
+    '8': 0.5
+  netherite:
+    '1': 0.5
+default: # Mode: default
+  broadcast-notice-start: '' # The message run when the mode is started
+  broadcast-notice-end: '' # The message run when the mode has ended
+
+  # Make sure to always have at least the nether / default biome.
+
+  nether: # The nether biome
+    orelayers:
+      nether_quartz:
+        lowY: 15-126
+      netherite:
+        lowY: 15-126
+    orechances:
+      nether_quartz:
+        lowY: '0.034'
+      netherite:
+        lowY: '0.0034'
+  default: # The default biome (if any biome is specified this will be the default)
+    orelayers:
+      diamond:
+        lowY: 5-16
+      gold:
+        lowY: 5-34
+      iron:
+        lowY: 5-68
+      coal:
+        lowY: 5-132
+      lapis_lazuli:
+        lowY: 14-34
+      redstone:
+        lowY: 5-16
+      emerald:
+        lowY: 5-33
+    orechances:
+      gold:
+        lowY: '0.0026'
+      iron:
+        lowY: '0.025'
+      diamond:
+        lowY: '0.0016'
+      lapis_lazuli:
+        lowY: '0.0027'
+      redstone:
+        lowY: '0.012'
+      emerald:
+        lowY: '0.0016'
+      coal:
+        lowY: '0.034'
+  ocean: {}
+  forest: {}
+  forest_hills: {}
+  jungle: {}
+  jungle_hills: {}
+  taiga: {}
+  taiga_hills: {}
+  mushroom_fields: {}
+  sawmp: {}
+  swamp_hills: {}
+  plains: {}
+  savanna: {}
+  savanna_plateau: {}
+  desert: {}
+  desert_hills: {}
+  mountains: {}
